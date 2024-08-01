@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card text-center">
+          <div class="card-header">
+            Números Primos Circulares
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Lista de Números Primos Circulares</h5>
+            <p class="card-text">Haga clic en el botón para enviar los números primos circulares a la API.</p>
+            <button class="btn btn-primary" (click)="enviarPrimos()">Enviar Primos Circulares a la API</button>
+          </div>
+          <div class="card-footer text-muted">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let primo of primos">{{ primo }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
